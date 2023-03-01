@@ -351,12 +351,14 @@ bool checkMate (piece board[8][8],int king) {
 				vertical = j;
 				control1 = 1;
 				control2 = 6;
+				break;
 			} 
 			if (board[i][j] == Bking && king == 1) {
 				horizontal = i;
 				vertical = j;
 				control1 = 7;
 				control2 = 12;
+				break;
 			}
 		}
 	}
@@ -378,13 +380,15 @@ bool checkMate (piece board[8][8],int king) {
 						for (int m = 0; m<8; m++) {
 							if((k != i) && (m != j)) {
 								if (controlMove(copyBoard,i,j,k,m) == true) {
+									piece allyPiece = copyBoard[k][m];
+									piece enemyPiece = copyBoard[i][j];
 									copyBoard[k][m] = copyBoard[i][j];
 									copyBoard[i][j] = empty;
 									if (check(copyBoard, king) == true) {
 										return false;
 									} else {
-										copyBoard[i][j] = copyBoard[k][m];
-										copyBoard[k][m] = empty;
+										copyBoard[i][j] = enemyPiece;
+										copyBoard[k][m] = allyPiece;
 										number--;
 										if(number == 0) {
 											return true;
