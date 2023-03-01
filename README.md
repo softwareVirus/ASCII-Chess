@@ -30,20 +30,21 @@ ASCII Design
 The game is designed with ASCII graphics, using simple characters to represent the chess pieces and board. The pieces are represented as follows:
 
 ### for black pieces
-King: BK
-Queen: BQ
-Rook: BR
-Knight: BN
-Bishop: BB
-Pawn: BP
+- King: BK
+- Queen: BQ
+- Rook: BR
+- Knight: BN
+- Bishop: BB
+- Pawn: BP
 
 ### for white pieces
-King: WK
-Queen: WQ
-Rook: WR
-Knight: WN
-Bishop: WB
-Pawn: WP
+- King: WK
+- Queen: WQ
+- Rook: WR
+- Knight: WN
+- Bishop: WB
+- Pawn: WP
+
 The board is represented as an 8x8 grid of characters, with white squares represented as # and black squares represented as .. The rows are numbered 1-8, and the columns are labeled a-h.
 
 Conclusion
