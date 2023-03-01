@@ -5,6 +5,7 @@ This is a simple implementation of the classic board game Chess in the C program
 To play the game, first, make sure you have a C compiler installed on your system. Then, download or clone the repository, navigate to the project directory, and run the following command in your terminal:
 
 ``` 
+cd ./main
 gcc chess.c -o chess 
 ```
 This will compile the program and create an executable file called chess. To start the game, simply run the following command:
