@@ -47,5 +47,5 @@ The game is designed with ASCII graphics, using simple characters to represent t
 
 The board is represented as an 8x8 grid of characters, with white squares represented as # and black squares represented as .. The rows are numbered 1-8, and the columns are labeled a-h.
 
-Conclusion
+# Conclusion
 This implementation of Chess in C with ASCII design is a fun project for any chess enthusiast or programming hobbyist. It is a great way to learn the basics of programming and game development, and can be easily modified and customized to add new features and functionality.
